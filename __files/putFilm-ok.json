@@ -1,0 +1,10 @@
+{
+  "id": 54,
+  "title": "Barbie",
+  "genre": "Comedy",
+  "revenue": 123000000,
+  "release": "2023-07-21",
+  "familyFriendly": true,
+  "directorId": 4,
+  "productionCompany": 1
+}

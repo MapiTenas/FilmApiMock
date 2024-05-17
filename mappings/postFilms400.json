@@ -1,0 +1,25 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/films",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "tile": "Oppenheimer",
+        "genre": "Historic drama",
+        "revnue": 949000000,
+        "rease": "2023-07-21",
+        "familyFriendly": true,
+        "directorId": 54,
+        "productionCompany": 12
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

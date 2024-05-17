@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "DELETE",
+    "urlPattern": "/film/.*"
+  },
+  "response": {
+    "status": 204,
+    "headers":{
+      "Content-Type": "application/json"
+    }
+  }
+}
