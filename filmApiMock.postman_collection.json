@@ -1,0 +1,910 @@
+{
+	"info": {
+		"_postman_id": "cff272c9-a193-4cda-be24-b608e93c7eb9",
+		"name": "filmApiMock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31328466"
+	},
+	"item": [
+		{
+			"name": "films",
+			"item": [
+				{
+					"name": "film ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/film/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/film/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/film/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/film/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/film/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film internal server error",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/film/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "films ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Oppenheimer\",\r\n    \"genre\": \"Historic drama\",\r\n    \"revenue\": 949000000,\r\n    \"release\": \"2023-07-21\",\r\n    \"familyFriendly\": true,\r\n    \"directorId\": 54,\r\n    \"productionCompany\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/films",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "films internal server error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{        \r\n    \"tile\": \"Oppenheimer\",\r\n    \"genre\": \"Historic drama\",\r\n    \"revnue\": 949000000,\r\n    \"rease\": \"2023-07-21\",\r\n    \"familyFriendly\": true,\r\n    \"directorId\": 54,\r\n    \"productionCompany\": 12\r\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/films",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "films forbidden",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{        \r\n    \"title\": \"Barbie\",\r\n    \"genre\": \"Comedy\",\r\n    \"revenue\": 123000000,\r\n    \"release\": \"2023-07-21\",\r\n    \"familyFriendly\": true,\r\n    \"directorId\": 4,\r\n    \"productionCompany\": 1\r\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/films",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Barbie\",\r\n    \"genre\": \"Comedy\",\r\n    \"revenue\": 123000000,\r\n    \"release\": \"2023-07-21\",\r\n    \"familyFriendly\": true,\r\n    \"directorId\": 4,\r\n    \"productionCompany\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/film/54",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Barbie\",\r\n    \"genre\": \"Comedy\",\r\n    \"revenue\": 123000000,\r\n    \"release\": \"2023-07-21\",\r\n    \"familyFriendly\": true,\r\n    \"directorId\": 4,\r\n    \"productionCompany\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/film/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "film bad request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Barbie\",\r\n    \"genre\": \"Comedy\",\r\n    \"revenue\": 123000000,\r\n    \"release\": \"2023-07-21\",\r\n    \"familyFriendly\": true,\r\n    \"directorId\": 4,\r\n    \"productionCompany\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/film/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"film",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "films ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/films",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "films internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/filmsKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"filmsKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "directors",
+			"item": [
+				{
+					"name": "director ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/director/10",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/director/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/director/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "directors ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Christopher\",\r\n    \"surname\": \"Nolan\",\r\n    \"accolades\": 4,\r\n    \"birthDate\": \"1970-07-30\",\r\n    \"oscar\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/directors",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "directors bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Christopher\",\r\n    \"surname\": \"Nolan\",\r\n    \"acolades\": 4,\r\n    \"birthDate\": \"1970-07-30\",\r\n    \"oscar\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/directors",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "directors internal server error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Greta\",\r\n    \"surname\": \"Gerwig\",\r\n    \"acolades\": 1,\r\n    \"birthDate\": \"1980-07-30\",\r\n    \"oscar\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/directors",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/director/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/director/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director internal server error",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/director/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Christopher\",\r\n    \"surname\": \"Nolan\",\r\n    \"accolades\": 4,\r\n    \"birthDate\": \"1970-07-30\",\r\n    \"oscar\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/director/12",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director forbidden",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Christopher\",\r\n    \"surname\": \"Nolan\",\r\n    \"accolades\": 4,\r\n    \"birthDate\": \"1970-07-30\",\r\n    \"oscar\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/director/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "director not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Christopher\",\r\n    \"surname\": \"Nolan\",\r\n    \"accolades\": 4,\r\n    \"birthDate\": \"1970-07-30\",\r\n    \"oscar\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/director/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"director",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "directors ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/directors",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "directors internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/directorsKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"directorsKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "production companies",
+			"item": [
+				{
+					"name": "production company ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company not found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company bad request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production companies ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Universal Pictures\",\r\n    \"location\": \"California, US.\",\r\n    \"revenue\": 11622000000000,\r\n    \"established\": \"1912-04-30\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/production-companies",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production companies bad request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Universal Pictures\",\r\n    \"location\": \"California, US.\",\r\n    \"revnue\": 11622000000000,\r\n    \"established\": \"1912-04-30\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/production-companies",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production companies internal server error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"A24\",\r\n    \"location\": \"New York, US.\",\r\n    \"revenue\": 1438000000,\r\n    \"established\": \"2012-09-20\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/production-companies",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/100",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company not found",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/4",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company forbidden",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company ok",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Universal Pictures\",\r\n    \"location\": \"California, US.\",\r\n    \"revenue\": 11622000000000,\r\n    \"established\": \"1912-04-30\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/production-company/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company not found",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/5",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production company bad request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-company/6",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-company",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production companies ok",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-companies",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "production companies internal server error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/production-companiesKO",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"production-companiesKO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
