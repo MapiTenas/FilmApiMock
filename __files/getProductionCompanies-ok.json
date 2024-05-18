@@ -1,0 +1,54 @@
+[
+  {
+    "id": 10,
+    "name": "Universal Pictures",
+    "location": "California, US.",
+    "revenue": 11622000000000,
+    "established": "1912-04-30",
+    "active": true,
+    "films":[
+      {
+        "id": 10,
+        "title": "Oppenheimer",
+        "genre": "Historic drama",
+        "revenue": 949000000,
+        "release": "2023-07-21",
+        "familyFriendly": false
+      },
+      {
+        "id": 16,
+        "title": "Barbie",
+        "genre": "Comedy",
+        "revenue": 123000000,
+        "release": "2023-07-21",
+        "familyFriendly": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "A24",
+    "location": "New York, US.",
+    "revenue": 55020000000,
+    "established": "2012-09-30",
+    "active": true,
+    "films":[
+      {
+        "id": 33,
+        "title": "Midsommar",
+        "genre": "Terror",
+        "revenue": 949000000,
+        "release": "2019-05-12",
+        "familyFriendly": false
+      },
+      {
+        "id": 16,
+        "title": "Hereditary",
+        "genre": "Terror",
+        "revenue": 11100000,
+        "release": "2018-01-21",
+        "familyFriendly": true
+      }
+    ]
+  }
+]

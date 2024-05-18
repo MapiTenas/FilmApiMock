@@ -5,6 +5,20 @@
   "revenue": 123000000,
   "release": "2023-07-21",
   "familyFriendly": true,
-  "directorId": 4,
-  "productionCompany": 1
+  "director": {
+    "id": 10,
+    "name": "Greta",
+    "surname": "Gerwig",
+    "accolades": 1,
+    "birthDate": "1980-07-30",
+    "oscar": false
+  },
+  "produtionCompany": {
+    "id": 10,
+    "name": "Universal Pictures",
+    "location": "California, US.",
+    "revenue": 11622000000000,
+    "established": "1912-04-30",
+    "active": true
+  }
 }

@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/production-company/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "getProductionCompany-ok.json"
+  }
+}

@@ -2,13 +2,13 @@
   "priority": 1,
   "request": {
     "method": "PUT",
-    "url": "/film/6"
+    "url": "/production-company/5"
   },
   "response": {
-    "status": 400,
+    "status": 404,
     "headers":{
       "Content-Type": "application/json"
     },
-    "bodyFileName": "badRequest.json"
+    "bodyFileName": "productionCompanyNotFound.json"
   }
 }

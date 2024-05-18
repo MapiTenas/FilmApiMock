@@ -1,0 +1,24 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/production-companies",
+    "bodyPatterns":[{
+      "equalToJson": {
+        "name": "A24",
+        "location": "New York, US.",
+        "revenue": 1438000000,
+        "established": "2012-09-20",
+        "active": true
+      }
+    }]
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "internalServerError.json"
+  }
+}
+

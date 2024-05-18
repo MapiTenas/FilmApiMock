@@ -1,0 +1,23 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/production-companies",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "name": "Universal Pictures",
+        "location": "California, US.",
+        "revnue": 11622000000000,
+        "established": "1912-04-30",
+        "active": true
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

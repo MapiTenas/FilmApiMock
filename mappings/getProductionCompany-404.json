@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/production-company/4"
+  },
+  "response": {
+    "status": 404,
+    "headers":{
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "productionCompanyNotFound.json"
+  }
+}

@@ -2,7 +2,7 @@
   "priority": 1,
   "request": {
     "method": "PUT",
-    "url": "/film/6"
+    "url": "/production-company/6"
   },
   "response": {
     "status": 400,

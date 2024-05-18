@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/production-companies"
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "postProductionCompanies-ok.json"
+  }
+}
