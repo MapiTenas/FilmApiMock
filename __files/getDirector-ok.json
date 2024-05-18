@@ -1,0 +1,16 @@
+{
+  "id": 10,
+  "name": "Christopher",
+  "surname": "Nolan",
+  "accolades": 4,
+  "birthDate": "1970-07-30",
+  "oscar": true,
+  "films": {
+    "id": 10,
+    "title": "Oppenheimer",
+    "genre": "Historic drama",
+    "revenue": 949000000,
+    "release": "2023-07-21",
+    "familyFriendly": true
+  }
+}

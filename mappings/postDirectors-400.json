@@ -1,0 +1,23 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/directors",
+    "bodyPatterns": [{
+      "equalToJson":{
+        "name": "Christopher",
+        "surname": "Nolan",
+        "acolades": 4,
+        "birthDate": "1970-07-30",
+        "oscar": true
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "badRequest.json"
+  }
+}

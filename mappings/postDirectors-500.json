@@ -1,0 +1,23 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/directors",
+    "bodyPatterns":[{
+      "equalToJson": {
+        "name": "Greta",
+        "surname": "Gerwig",
+        "acolades": 1,
+        "birthDate": "1980-07-30",
+        "oscar": true
+      }
+    }]
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "internalServerError.json"
+  }
+}
